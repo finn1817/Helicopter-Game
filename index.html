@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helicopter Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div class="ui">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="best">Best: <span id="best">0</span></div>
+            <div class="fuel-bar">
+                <div class="fuel-fill" id="fuelFill"></div>
+                <span class="fuel-text">FUEL</span>
+            </div>
+        </div>
+        <div class="game-over" id="gameOver">
+            <h2>GAME OVER</h2>
+            <p>Score: <span id="finalScore">0</span></p>
+            <p>Best: <span id="finalBest">0</span></p>
+            <button onclick="game.restart()">PLAY AGAIN</button>
+        </div>
+        <div class="instructions" id="instructions">
+            <h2>HELICOPTER RESCUE</h2>
+            <p>Hold SPACE or CLICK to fly up</p>
+            <p>Collect fuel and avoid obstacles</p>
+            <p>How far can you go?</p>
+            <button onclick="game.start()">START GAME</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
