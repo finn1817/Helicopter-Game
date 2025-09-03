@@ -6,7 +6,7 @@ class Helicopter {
         this.height = 30;
         this.velocity = 0;
         this.gravity = 0.5;
-        this.thrust = -8;
+    this.thrustPower = -8;
         this.rotation = 0;
         this.rotorAngle = 0;
     }
@@ -19,7 +19,7 @@ class Helicopter {
     }
 
     thrust() {
-        this.velocity = this.thrust;
+        this.velocity = this.thrustPower;
         game.addParticle(this.x - 20, this.y + 10, 'thrust');
     }
 
