@@ -6,7 +6,7 @@ class Helicopter {
         this.height = 30;
         this.velocity = 0;
         this.gravity = 0.5;
-    this.thrustPower = -8;
+        this.thrustPower = -8;
         this.rotation = 0;
         this.rotorAngle = 0;
     }
